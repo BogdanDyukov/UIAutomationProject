@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3970","Авторизация с валидными данными с проверкой","tests","Thu Jun 26 13:22:42 UTC 2025","passed","Thu Jun 26 13:22:46 UTC 2025","TestLogin","login_test","",""
+"","3496","Авторизация с валидными данными с проверкой","tests","Thu Jun 26 15:33:50 UTC 2025","passed","Thu Jun 26 15:33:53 UTC 2025","TestLogin","login_test","",""
