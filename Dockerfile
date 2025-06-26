@@ -1,10 +1,17 @@
 FROM python:3.12-slim
 
 # Chrome
-RUN apt-get update &&  \
-    apt-get install -y wget && \
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
-    apt-get install -y ./google-chrome-stable_current_amd64.deb  && \
+#RUN apt-get update &&  \
+#    apt-get install -y wget && \
+#    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+#    apt-get install -y ./google-chrome-stable_current_amd64.deb  && \
+#    rm google-chrome-stable_current_amd64.deb && \
+#    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update -qq &&  \
+    apt-get install -qq wget && \
+    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt-get install -qq ./google-chrome-stable_current_amd64.deb  && \
     rm google-chrome-stable_current_amd64.deb && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
