@@ -6,8 +6,7 @@ services:
       context: .
     volumes:
       - ./:/usr/workspace
-    #    command: bash -c "ls -la && pytest -sv --alluredir=allure-results main.py"
-    command: bash -c "ls -la && pytest -vs --alluredir=allure-results tests/login_test.py::TestLogin::test_successful_login"
+    command: bash -c "ls -la && pytest -sv --alluredir=allure-results"
     environment:
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
